@@ -26,4 +26,6 @@ const userSchema = new mongoose.Schema({
 
 const userModel = mongoose.model('user',userSchema); ///create user collection model
 
+
+
 module.exports = userModel;

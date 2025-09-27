@@ -1,9 +1,10 @@
 //start server
-
+require('dotenv').config();  // for .env variable uses
 const app = require('./src/app');
-connectDB = require('./src/db/db');
+const connectDB = require('./src/db/db');
 
 connectDB();
+
 
 
 app.listen(3000, () => {
